@@ -1,3 +1,4 @@
+term.clear()
 term.setCursorPos(8,2)
 term.write("WolfOS Boot menu 1.0")
 

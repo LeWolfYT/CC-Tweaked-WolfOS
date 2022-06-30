@@ -13,9 +13,6 @@ while instd == 0 do
 end
 
 fs.makeDir("/WolfOS")
-io.open("/WolfOS/Menu.lua", "w")
-io.write(http.request("https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua"))
-io.close()
-io.open("/WolfOS/BootMenu.lua", "w")
-io.write(http.request("https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua"))
-io.close()
+shell.run("cd /WolfOS")
+shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua")
+shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua")

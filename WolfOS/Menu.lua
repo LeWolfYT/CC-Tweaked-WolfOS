@@ -1,13 +1,14 @@
 term.setCursorPos(1,1)
 term.setBackgroundColor(colors.cyan)
 term.setTextColor(colors.cyan)
-for i=1,19 do
-  print("###################################################")
+sizex, sizey = term.getSize
+for i=1,sizey do
+  print(string.rep("#", sizex))
 end
 term.setCursorPos(1,20)
 term.setBackgroundColor(colors.lightGray)
 term.setTextColor(colors.lightGray)
-print("###################################################")
+print(string.rep("#", sizex))
 term.setCursorPos(46,18)
 term.setTextColor(colors.black)
 term.write(textutils.formatTime(os.time(), true))
@@ -18,6 +19,6 @@ term.write("Menu (Shift+M)")
 term.setCursorPos(47,19)
 while true do
   sleep(0)
-  term.setCursorPos(47,19)
+  term.setCursorPos(sizex - 4,sizey)
   term.write(textutils.formatTime(os.time(),true))
 end

@@ -23,11 +23,11 @@ function detectmenu()
   until key == keys.m
   shell.run("fg /WolfOS/mainmenu.lua")
 end
-function changetime()
-  term.setCursorPos(sizex - 7,sizey)
-  term.write(textutils.formatTime(os.time(),false))
-end
+term.setCursorPos(sizex - 11,sizey)
+term.write("WolfOS v1.1")
 while true do
-  sleep(0)
-  parallel.waitForAny(detectmenu, changetime)
+  repeat
+        local _, key = os.pullEvent("key")
+  until key == keys.m
+  shell.run("fg /WolfOS/mainmenu.lua")
 end

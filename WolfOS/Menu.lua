@@ -20,8 +20,8 @@ term.write("<M>enu")
 function detectmenu()
   repeat
         local _, key = os.pullEvent("key")
-  until key == keys.q
-  shell.run("shutdown")
+  until key == keys.m
+  shell.run("fg /WolfOS/menu.lua")
 end
 function changetime()
   term.setCursorPos(sizex - 7,sizey)

@@ -13,7 +13,5 @@ while instd == 0 do
 end
 
 fs.makeDir("/WolfOS")
-http.get("https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua")
-fs.move("./Menu.lua", "/WolfOS")
-http.get("https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua")
-fs.move("./BootMenu.lua", "/WolfOS")
+fs.move(http.get("https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua"), "/WolfOS")
+fs.move(http.get("https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua"), "/WolfOS")

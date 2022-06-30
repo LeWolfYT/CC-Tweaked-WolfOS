@@ -15,6 +15,7 @@ term.setCursorPos(51,19)
 term.write(" ")
 term.setCursorPos(1,19)
 term.write("Menu (Shift+M)")
+term.setCursorPos(47,19)
 while true do
   sleep(0)
   term.setCursorPos(47,19)

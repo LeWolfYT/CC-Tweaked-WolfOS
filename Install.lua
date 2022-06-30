@@ -14,8 +14,8 @@ end
 
 fs.makeDir("/WolfOS")
 io.open("/WolfOS/Menu.lua", "w")
-io.write(http.get("https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua"))
+io.write(http.request("https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua"))
 io.close()
 io.open("/WolfOS/BootMenu.lua", "w")
-io.write(http.get("https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua"))
+io.write(http.request("https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua"))
 io.close()

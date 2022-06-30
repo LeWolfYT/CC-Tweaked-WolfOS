@@ -1,7 +1,7 @@
 term.setCursorPos(1,1)
 term.setBackgroundColor(colors.cyan)
 term.setTextColor(colors.cyan)
-for i == 1, 19 do
+for i=1,19 do
   print("###################################################")
 end
 term.setCursorPos(1,20)

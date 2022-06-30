@@ -21,11 +21,9 @@ function detectclick()
   repeat
     ev, mb, mx, my = os.pullEvent("mouse_click")
   until (mx == 1 or mx == 2 or mx == 3 or mx == 4) and my == 1
-        term.clear()
-        term.setCursorPos(1,1)
-        exit()
-      end
-  end
+  term.clear()
+  term.setCursorPos(1,1)
+  exit()
 end
 function changetime()
   term.setCursorPos(sizex - 7,sizey)

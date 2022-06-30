@@ -1,3 +1,4 @@
+term.clear()
 term.setCursorPos(1,1)
 term.setBackgroundColor(colors.cyan)
 term.setTextColor(colors.cyan)

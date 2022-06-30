@@ -16,14 +16,12 @@ term.write(textutils.formatTime(os.time(), false))
 term.setCursorPos(sizex,sizey)
 term.write(" ")
 term.setCursorPos(1,sizey)
-term.write("Menu")
-function detectclick()
+term.write("<M>enu")
+function detectmenu()
   repeat
-    ev, mb, mx, my = os.pullEvent("mouse_click")
-  until (mx == 1 or mx == 2 or mx == 3 or mx == 4) and my == 1
-  term.clear()
-  term.setCursorPos(1,1)
-  exit()
+        local _, key = os.pullEvent("key")
+  until key == keys.q
+  shell.run("shutdown")
 end
 function changetime()
   term.setCursorPos(sizex - 7,sizey)
@@ -31,5 +29,5 @@ function changetime()
 end
 while true do
   sleep(0)
-  parallel.waitForAny(detectclick, changetime)
+  parallel.waitForAny(detectmenu, changetime)
 end

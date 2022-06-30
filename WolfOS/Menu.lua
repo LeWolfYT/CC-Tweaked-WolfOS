@@ -18,9 +18,9 @@ term.write(" ")
 term.setCursorPos(1,sizey)
 term.write("Menu")
 function detectclick()
-  ev, mb, mx, my = os.pullEvent("mouse_click")
-  if my == sizey then
-      if mx == 1 or mx == 2 or mx == 3 or mx == 4 then
+  repeat
+    ev, mb, mx, my = os.pullEvent("mouse_click")
+  until (mx == 1 or mx == 2 or mx == 3 or mx == 4) and my == 1
         term.clear()
         term.setCursorPos(1,1)
         exit()

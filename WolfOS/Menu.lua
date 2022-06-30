@@ -21,7 +21,7 @@ function detectmenu()
   repeat
         local _, key = os.pullEvent("key")
   until key == keys.m
-  shell.run("fg /WolfOS/menu.lua")
+  shell.run("fg /WolfOS/mainmenu.lua")
 end
 function changetime()
   term.setCursorPos(sizex - 7,sizey)

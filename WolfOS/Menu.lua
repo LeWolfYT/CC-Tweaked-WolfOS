@@ -18,5 +18,5 @@ term.write("Menu (Shift+M)")
 while true do
   sleep(0)
   term.setCursorPos(47,19)
-  term.write(textUtils.formatTime(os.time(),true))
+  term.write(textutils.formatTime(os.time(),true))
 end

@@ -16,9 +16,17 @@ term.write(textutils.formatTime(os.time(), false))
 term.setCursorPos(sizex,sizey)
 term.write(" ")
 term.setCursorPos(1,sizey)
-term.write("Menu (Shift+M)")
+term.write("Menu")
 while true do
   sleep(0)
+  ev, mb, mx, my = os.pullEvent("mouse_click")
+  if my == sizey then
+      if mx == 1 or mx == 2 or mx == 3 or mx == 4 then
+        term.clear()
+        term.setCursorPos(1,1)
+        exit()
+      end
+  end
   term.setCursorPos(sizex - 7,sizey)
   term.write(textutils.formatTime(os.time(),false))
 end

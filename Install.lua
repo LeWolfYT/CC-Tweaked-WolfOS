@@ -15,6 +15,7 @@ end
 if fs.exists("/WolfOS") then
   print("WolfOS is already installed.")
   print("Reinstall WolfOS? (Y/N)")
+  instdt == 0
   while instdt == 0 do
     k = io.read()
     if k ~= "Y" and k ~= "y" then

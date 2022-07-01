@@ -25,3 +25,4 @@ end
 
 for i in 1,proglen do
   addtx(i .. ". " .. progs[i], ((2 * i) + 2) )
+end

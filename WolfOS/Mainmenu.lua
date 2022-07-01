@@ -38,8 +38,8 @@ while true do
         shell.run("/WolfOS/Exit.lua")
       elseif key == keys.three then
         shell.run("/WolfOS/Dprogs.lua")
-      else
-        break
+      elseif key == keys.four and fs.exists("/WolfOS/Programs") then
+        shell.run("/WolfOS/Rprogs.lua")
       end
    end
 end

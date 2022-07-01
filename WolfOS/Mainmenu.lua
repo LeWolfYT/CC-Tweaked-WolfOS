@@ -29,9 +29,9 @@ while true do
     if e == "key" then
       local key = p
       if key == keys.one then
-        exit()
+        shell.run("/WolfOS/Menu.lua")
       elseif key == keys.two then
-        shell.run("/WolfOS/Uninstall.lua")
+        exit()
       elseif key == keys.three then
         shell.run("/WolfOS/Dprogs.lua")
         break

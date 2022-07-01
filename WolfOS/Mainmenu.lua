@@ -1,7 +1,7 @@
 term.clear()
 term.setCursorPos(1,1)
 term.setBackgroundColor(colors.lime)
-term.setTextColor(colors.orange)
+term.setTextColor(colors.lime)
 sizex, sizey = term.getSize()
 for i=1,sizey do
   print(string.rep("#", sizex))

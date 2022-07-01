@@ -19,6 +19,7 @@ end
 function addtx(text, ypos)
   term.setCursorPos(centerx, ypos)
   term.write(text)
+end
 
 addtx("1. Cancel", 2)
 addtx("2. Exit to CraftOS", 4)

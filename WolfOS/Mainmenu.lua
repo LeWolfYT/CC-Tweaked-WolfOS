@@ -17,7 +17,7 @@ function centerx(text)
 end
 
 function addtx(text, ypos)
-  term.setCursorPos(centerx, ypos)
+  term.setCursorPos(centerx(text), ypos)
   term.write(text)
 end
 

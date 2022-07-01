@@ -23,10 +23,12 @@ if fs.exists("/WolfOS") then
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Mainmenu.lua")
+  shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Dprogs.lua")
 else
   fs.makeDir("/WolfOS")
   shell.run("cd /WolfOS")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Mainmenu.lua")
+  shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Dprogs.lua")
 end

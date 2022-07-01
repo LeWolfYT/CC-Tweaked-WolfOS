@@ -18,6 +18,8 @@ while true do
       elseif key == 85 then
         shell.run("/WolfOS/Uninstall.lua")
       elseif key == 69 then
+        term.clear()
+        term.setCursorPos(1,1)
         break
       else
         break

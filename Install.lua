@@ -14,22 +14,16 @@ end
 
 if fs.exists("/WolfOS") then
   print("WolfOS is already installed.")
-  print("Reinstall WolfOS? (Y/N)")
-  instdt == 0
-  while instdt == 0 do
-    k = io.read()
-    if k ~= "Y" and k ~= "y" then
-      break
-    else
-      instdt = 1
-      fs.delete("/WolfOS")
-      fs.makeDir("/WolfOS")
-      shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua")
-      shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua")
-      shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Mainmenu.lua")
-    end
-  end
-else
+  print("Reinstalling...")
+  fs.delete("/WolfOS/Menu.lua")
+  fs.delete("/WolfOS/BootMenu.lua")
+  fs.delete("/WolfOS/Mainmenu.lua")
+  fs.makeDir("/WolfOS")
+  shell.run("cd /WolfOS")
+  shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua")
+  shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua")
+  shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Mainmenu.lua")
+else:
   fs.makeDir("/WolfOS")
   shell.run("cd /WolfOS")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua")

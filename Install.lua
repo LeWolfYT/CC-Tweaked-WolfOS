@@ -1,4 +1,4 @@
-print("Welcome to the WolfOS 1.0 installer!")
+print("Welcome to the WolfOS installer!")
 print("Would you like to start installation? Y/N")
 instd = 0
 sleep(0.1)
@@ -18,7 +18,7 @@ if fs.exists("/WolfOS") then
   fs.delete("/WolfOS/Menu.lua")
   fs.delete("/WolfOS/BootMenu.lua")
   fs.delete("/WolfOS/Mainmenu.lua")
-  fs.makeDir("/WolfOS")
+  fs.delete("/WolfOS/Dprogs.lua")
   shell.run("cd /WolfOS")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua")

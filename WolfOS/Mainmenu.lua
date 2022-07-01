@@ -24,6 +24,9 @@ addtx("1. Cancel", 2)
 addtx("2. Exit to CraftOS", 4)
 addtx("3. Download programs", 6)
 
+if fs.exists("/WolfOS/Programs") then
+  addtx("4. Run programs", 8)
+
 while true do
   local e,p = os.pullEvent()
     if e == "key" then
@@ -31,10 +34,9 @@ while true do
       if key == keys.one then
         shell.run("/WolfOS/Menu.lua")
       elseif key == keys.two then
-        exit()
+        shell.run("/WolfOS/Exit.lua")
       elseif key == keys.three then
         shell.run("/WolfOS/Dprogs.lua")
-        break
       else
         break
       end

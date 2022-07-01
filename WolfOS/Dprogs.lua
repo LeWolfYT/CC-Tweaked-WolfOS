@@ -25,4 +25,4 @@ if not fs.exists("/WolfOS/Programs") then
 end
 
 shell.run("cd /WolfOS/Programs")
-shell.run("wget https://raw.githubusercontent.com/" .. user .. "/" .. repo .. "/main/" .. file)
+shell.run("wget https://raw.githubusercontent.com/" .. username .. "/" .. repo .. "/main/" .. file)

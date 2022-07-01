@@ -26,8 +26,11 @@ end
 term.setCursorPos(sizex - 11,sizey)
 term.write("WolfOS v1.1")
 while true do
-  repeat
-        local _, key = os.pullEvent("key")
-  until key == keys.m
-  shell.run("fg /WolfOS/mainmenu.lua")
+  local e,p = os.pullEvent()
+    if e == "key" then
+      local key = p
+      if key == keys.m then
+        shell.run("/WolfOS/Mainmenu.lua")
+      end
+   end
 end

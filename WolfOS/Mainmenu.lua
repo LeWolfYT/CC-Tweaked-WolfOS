@@ -11,7 +11,7 @@ function centerx(text)
   local txl = #text
   local txlg = txl / 2
   local txls = math.floor(txlg)
-  local xpos = sizex - txls
+  local xpos = (sizex / 2) - txls
   return(xpos)
 end
 

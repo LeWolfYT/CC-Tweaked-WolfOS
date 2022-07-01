@@ -5,7 +5,7 @@ sleep(0.1)
 while instd == 0 do
   d = io.read()
   if d ~= "Y" and d ~= "y" then
-    break
+    exit()
   else
     instd = 1
     print("Installing..")

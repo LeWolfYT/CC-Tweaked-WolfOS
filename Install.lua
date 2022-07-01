@@ -19,6 +19,8 @@ if fs.exists("/WolfOS") then
   fs.delete("/WolfOS/BootMenu.lua")
   fs.delete("/WolfOS/Mainmenu.lua")
   fs.delete("/WolfOS/Dprogs.lua")
+  fs.delete("/WolfOS/Rprogs.lua")
+  fs.delete("/WolfOS/Exit.lua")
   shell.run("cd /WolfOS")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua")

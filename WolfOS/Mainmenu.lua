@@ -26,6 +26,7 @@ addtx("3. Download programs", 6)
 
 if fs.exists("/WolfOS/Programs") then
   addtx("4. Run programs", 8)
+end
 
 while true do
   local e,p = os.pullEvent()

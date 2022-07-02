@@ -13,3 +13,4 @@ shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/mai
 shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Rprogs.lua")
 shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Exit.lua")
 shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/ver.txt")
+shell.run("/WolfOS/Menu.lua")

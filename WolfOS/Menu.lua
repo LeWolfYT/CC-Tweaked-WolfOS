@@ -29,6 +29,7 @@ term.write("WolfOS v" .. cver)
 if cver < lver then
   term.setCursorPos(1,1)
   term.write("New [u]pdate available! (v".. lver ..")")
+  updav = true
 end
 
 while true do
@@ -37,6 +38,8 @@ while true do
       local key = p
       if key == keys.m then
         shell.run("/WolfOS/Mainmenu.lua")
+      elseif updav and key == keys.u then
+        shell.run("/WolfOS/Reinstaller.lua")
       end
    end
 end

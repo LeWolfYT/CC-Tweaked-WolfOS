@@ -16,7 +16,7 @@ function addtx(text, ypos)
   term.write(text)
 end
 
-addtx("Programs (<X> to exit)", 2)
+addtx("Programse (E[x]it)", 2)
 
 for i = 1,proglen do
     addtx(i .. ". " .. progs[i], (2*i+2))

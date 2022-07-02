@@ -24,7 +24,16 @@ function detectmenu()
   shell.run("fg /WolfOS/mainmenu.lua")
 end
 term.setCursorPos(sizex - 11,sizey)
-term.write("WolfOS v1.2")
+term.write("WolfOS v1.2.1")
+
+cver = tonumber(io.open("/WolfOS/ver.txt", "r").read())
+lver = tonumber(http.get("https://github.com/LeWolfYT/CC-Tweaked-WolfOS/raw/main/WolfOS/ver.txt").readAll())
+
+if cver < lver then
+  term.setCursorPos(1,1)
+  term.write("New [u]pdate available! (v".. lver ..")")
+end
+
 while true do
   local e,p = os.pullEvent()
     if e == "key" then

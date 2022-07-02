@@ -35,7 +35,7 @@ while true do
       if key == keys.one then
         shell.run("/WolfOS/Menu.lua")
       elseif key == keys.two then
-        break
+        shell.run("/WolfOS/Exit.lua")
       elseif key == keys.three then
         shell.run("/WolfOS/Dprogs.lua")
       elseif key == keys.four and fs.exists("/WolfOS/Programs") then

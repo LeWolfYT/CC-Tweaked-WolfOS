@@ -47,8 +47,6 @@ while true do
           term.clear()
           shell.run("/WolfOS/Programs/" .. progs[p - 48])
         end
-      else
-        break
       end
    end
 end

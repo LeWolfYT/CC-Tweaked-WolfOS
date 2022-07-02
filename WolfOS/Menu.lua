@@ -16,7 +16,7 @@ term.write(textutils.formatTime(os.time(), false))
 term.setCursorPos(sizex,sizey)
 term.write(" ")
 term.setCursorPos(1,sizey)
-term.write("<M>enu")
+term.write("[M]enu")
 function detectmenu()
   repeat
         local _, key = os.pullEvent("key")
@@ -24,7 +24,7 @@ function detectmenu()
   shell.run("fg /WolfOS/mainmenu.lua")
 end
 term.setCursorPos(sizex - 11,sizey)
-term.write("WolfOS v1.1")
+term.write("WolfOS v1.2")
 while true do
   local e,p = os.pullEvent()
     if e == "key" then

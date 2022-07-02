@@ -1,3 +1,4 @@
-shell.run("delete Install.lua")
-shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/Install.lua")
-shell.run("Install")
+shell.run("cd /WolfOS")
+shell.run("delete Reinstaller.lua")
+shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/Reinstaller.lua")
+shell.run("Renstaller")

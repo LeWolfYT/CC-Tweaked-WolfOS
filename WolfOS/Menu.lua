@@ -23,11 +23,12 @@ function detectmenu()
   until key == keys.m
   shell.run("fg /WolfOS/mainmenu.lua")
 end
-term.setCursorPos(sizex - 11,sizey)
-term.write("WolfOS v1.2.1")
 
 cver = tonumber(fs.open("/WolfOS/ver.txt", "r").readAll())
 lver = tonumber(http.get("https://github.com/LeWolfYT/CC-Tweaked-WolfOS/raw/main/WolfOS/ver.txt").readAll())
+
+term.setCursorPos(sizex - #("WolfOS v" .. cver),sizey)
+term.write("WolfOS v" .. cver)
 
 if cver < lver then
   term.setCursorPos(1,1)

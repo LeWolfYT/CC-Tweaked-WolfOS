@@ -26,7 +26,7 @@ end
 term.setCursorPos(sizex - 11,sizey)
 term.write("WolfOS v1.2.1")
 
-cver = tonumber(io.open("/WolfOS/ver.txt", "r").read())
+cver = tonumber(fs.open("/WolfOS/ver.txt", "r").readAll())
 lver = tonumber(http.get("https://github.com/LeWolfYT/CC-Tweaked-WolfOS/raw/main/WolfOS/ver.txt").readAll())
 
 if cver < lver then

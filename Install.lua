@@ -1,20 +1,11 @@
 print("Welcome to the WolfOS installer!")
-print("Would you like to start installation? Y/N")
-instd = 0
-sleep(0.1)
-while instd == 0 do
-  d = io.read()
-  if d ~= "Y" and d ~= "y" then
-    exit()
-  else
-    instd = 1
-    print("Installing..")
-  end
-end
+os.sleep(0.1)
+print("Installing...")
+os.sleep(1)
 
 if fs.exists("/WolfOS") then
-  print("WolfOS is already installed.")
-  print("Reinstalling...")
+  printError("WolfOS is already installed.")
+  printError("Reinstalling...")
   fs.delete("/WolfOS/Menu.lua")
   fs.delete("/WolfOS/BootMenu.lua")
   fs.delete("/WolfOS/Mainmenu.lua")

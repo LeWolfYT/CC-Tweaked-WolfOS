@@ -39,7 +39,7 @@ while true do
       if key == keys.m then
         shell.run("/WolfOS/Mainmenu.lua")
       elseif updav and key == keys.u then
-        shell.run("/WolfOS/Reinstaller.lua")
+        shell.run("/WolfOS/Update.lua")
       end
    end
 end

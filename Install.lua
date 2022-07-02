@@ -12,7 +12,7 @@ if fs.exists("/WolfOS") then
   fs.delete("/WolfOS/Dprogs.lua")
   fs.delete("/WolfOS/Rprogs.lua")
   fs.delete("/WolfOS/Exit.lua")
-  fs.delete("/WolfOS/v.txt")
+  fs.delete("/WolfOS/ver.txt")
   shell.run("cd /WolfOS")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua")
@@ -20,7 +20,7 @@ if fs.exists("/WolfOS") then
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Dprogs.lua")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Rprogs.lua")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Exit.lua")
-  shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/v.txt")
+  shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/ver.txt")
 else
   fs.makeDir("/WolfOS")
   shell.run("cd /WolfOS")
@@ -30,5 +30,5 @@ else
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Dprogs.lua")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Rprogs.lua")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Exit.lua")
-  shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/v.txt")
+  shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/ver.txt")
 end

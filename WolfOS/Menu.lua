@@ -13,19 +13,33 @@ print(string.rep("#", sizex))
 term.setTextColor(colors.black)
 term.setCursorPos(1,sizey)
 term.write("[M]enu")
-function detectmenu()
-  repeat
-        local _, key = os.pullEvent("key")
-  until key == keys.m
-  shell.run("fg /WolfOS/mainmenu.lua")
-end
 
 cver = tonumber(fs.open("/WolfOS/ver.txt", "r").readAll())
 lver = tonumber(http.get("https://github.com/LeWolfYT/CC-Tweaked-WolfOS/raw/main/WolfOS/ver.txt").readAll())
 
-term.setCursorPos(sizex - #("WolfOS v" .. cver),sizey)
-term.write("WolfOS v" .. cver)
+function drawtime()
+  while true do
+    sleep(0.1)
+    local time = textutils.formatTime(os.time("local"), false)
+    term.setCursorPos((sizex - #time), sizey)
+    term.write(time)
+  end
+end
 
+function keyloop()
+  while true do
+    local e,p = os.pullEvent()
+      if e == "key" then
+        local key = p
+        if key == keys.m then
+          shell.run("/WolfOS/Mainmenu.lua")
+        elseif updav and key == keys.u then
+          shell.run("/WolfOS/Update.lua")
+        end
+     end
+  end
+end
+    
 if cver < lver then
   term.setCursorPos(1,1)
   term.write("New [u]pdate available! (v".. lver ..")")

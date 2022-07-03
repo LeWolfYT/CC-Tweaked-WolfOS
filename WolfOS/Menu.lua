@@ -26,18 +26,21 @@ function drawtime()
   end
 end
 
+l = false
 function keyloop()
-  while true do
+  repeat
     local e,p = os.pullEvent()
       if e == "key" then
         local key = p
         if key == keys.m then
           shell.run("/WolfOS/Mainmenu.lua")
+          l = true
         elseif updav and key == keys.u then
           shell.run("/WolfOS/Update.lua")
+          l = true
         end
      end
-  end
+  until l
 end
     
 if cver < lver then

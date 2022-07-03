@@ -21,8 +21,6 @@ while true do
         term.clear()
         term.setCursorPos(1,1)
         break
-      else
-        break
       end
    end
 end

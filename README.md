@@ -1,9 +1,8 @@
 # WolfOS
 A program that tries to emulate the feel of a modern operating system on computercraft computers.
 
-## Changelog (102, rolled back):
-- The clock is back!
-- [Rolled back because of a bug]
+## Changelog (103):
+- Rolled back changes from v102
 
 ## Setup:
 ### Step 1: Installer

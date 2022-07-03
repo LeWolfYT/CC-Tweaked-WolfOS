@@ -1,10 +1,8 @@
 # WolfOS
 A program that tries to emulate the feel of a modern operating system on computercraft computers.
 
-## Changelog (100):
-- New numbering scheme!
-- Fixed misspelling of the word "Programs" (Rprogs.lua)
-- Moved the word "exit" to the right side of the screen (Exit.lua)
+## Changelog (101):
+- Lots of fixes for 1.12-
 
 ## Setup:
 ### Step 1: Installer

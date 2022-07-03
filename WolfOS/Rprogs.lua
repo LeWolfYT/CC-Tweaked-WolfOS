@@ -16,7 +16,9 @@ function addtx(text, ypos)
   term.write(text)
 end
 
-addtx("Programse (E[x]it)", 2)
+addtx("Programs", 2)
+term.setCursorPos(sizex-7, 2)
+term.write("E[x]it")
 
 for i = 1,proglen do
     addtx(i .. ". " .. progs[i], (2*i+2))

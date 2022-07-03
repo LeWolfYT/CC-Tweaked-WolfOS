@@ -1,8 +1,8 @@
 # WolfOS
 A program that tries to emulate the feel of a modern operating system on computercraft computers.
 
-## Changelog (101):
-- Fixed all scripts that use `wget`
+## Changelog (102):
+- The clock is back!
 
 ## Setup:
 ### Step 1: Installer

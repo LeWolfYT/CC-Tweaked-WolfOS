@@ -47,13 +47,5 @@ if cver < lver then
 end
 
 while true do
-  local e,p = os.pullEvent()
-    if e == "key" then
-      local key = p
-      if key == keys.m then
-        shell.run("/WolfOS/Mainmenu.lua")
-      elseif updav and key == keys.u then
-        shell.run("/WolfOS/Update.lua")
-      end
-   end
+  parallel.waitForAll(keyloop, drawtime)
 end

@@ -1,6 +1,11 @@
 # WolfOS
 A program that tries to emulate the feel of a modern operating system on computercraft computers.
 
+## Changelog (100):
+- New numbering scheme!
+- Fixed misspelling of the word "Programs" (Rprogs.lua)
+- Moved the word "exit" to the right side of the screen (Exit.lua)
+
 ## Setup:
 ### Step 1: Installer
 Run this command: `wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/Install.lua`

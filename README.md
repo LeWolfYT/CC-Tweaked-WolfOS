@@ -1,5 +1,5 @@
 # WolfOS
-An OS for computercraft computers!
+A program that tries to emulate the feel of a modern operating system on computercraft computers.
 
 ## Setup:
 ### Step 1: Installer

@@ -27,6 +27,7 @@ if fs.exists("/WolfOS") then
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Reinstaller.lua /WolfOS/Reinstaller.lua")
 else
   fs.makeDir("/WolfOS")
+  shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/Update.lua ./Update.lua")
   shell.run("cd /WolfOS")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/Menu.lua /WolfOS/Menu.lua")
   shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/WolfOS/BootMenu.lua /WolfOS/BootMenu.lua")

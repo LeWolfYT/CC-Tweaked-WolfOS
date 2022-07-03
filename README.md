@@ -8,3 +8,8 @@ Run this command: `wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-Wo
 Then, start it by typing `Install`
 
 You are done!
+
+### Step 2 (optional): Boot to bootloader
+First, create the file startup.lua in the root directory (unless it's already there
+Next, edit the file and add the text `shell.run("/WolfOS/Bootloader.lua")`
+You are done!

@@ -35,7 +35,10 @@ while true do
       if key == keys.one then
         shell.run("/WolfOS/Menu.lua")
       elseif key == keys.two then
-        shell.run("/WolfOS/Exit.lua")
+        term.setBackgroundColor(colors.black)
+        term.setTextColor(colors.white)
+        term.clear()
+        error("", -1)
       elseif key == keys.three then
         shell.run("/WolfOS/Dprogs.lua")
       elseif key == keys.four and fs.exists("/WolfOS/Programs") then

@@ -17,32 +17,9 @@ term.write("[M]enu")
 cver = tonumber(fs.open("/WolfOS/ver.txt", "r").readAll())
 lver = tonumber(http.get("https://github.com/LeWolfYT/CC-Tweaked-WolfOS/raw/main/WolfOS/ver.txt").readAll())
 
-function drawtime()
-  while true do
-    sleep(0.1)
-    local time = textutils.formatTime(os.time("local"), false)
-    term.setCursorPos((sizex - #time), sizey)
-    term.write(time)
-  end
-end
+term.setCursorPos(sizex - #("WolfOS v" .. cver),sizey)
+term.write("WolfOS v" .. cver)
 
-l = false
-function keyloop()
-  repeat
-    local e,p = os.pullEvent()
-      if e == "key" then
-        local key = p
-        if key == keys.m then
-          shell.run("/WolfOS/Mainmenu.lua")
-          l = true
-        elseif updav and key == keys.u then
-          shell.run("/WolfOS/Update.lua")
-          l = true
-        end
-     end
-  until l
-end
-    
 if cver < lver then
   term.setCursorPos(1,1)
   term.write("New [u]pdate available! (v".. lver ..")")
@@ -50,5 +27,13 @@ if cver < lver then
 end
 
 while true do
-  parallel.waitForAll(keyloop, drawtime)
+  local e,p = os.pullEvent()
+    if e == "key" then
+      local key = p
+      if key == keys.m then
+        shell.run("/WolfOS/Mainmenu.lua")
+      elseif updav and key == keys.u then
+        shell.run("/WolfOS/Update.lua")
+      end
+   end
 end

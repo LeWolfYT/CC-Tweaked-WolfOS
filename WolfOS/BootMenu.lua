@@ -13,11 +13,11 @@ while true do
   local e,p = os.pullEvent()
     if e == "key" then
       local key = p
-      if key == 83 then
+      if key == keys.s then
         shell.run("/WolfOS/Menu.lua")
-      elseif key == 85 then
+      elseif key == keys.u then
         shell.run("/WolfOS/Uninstall.lua")
-      elseif key == 69 then
+      elseif key == keys.e then
         term.clear()
         term.setCursorPos(1,1)
         break

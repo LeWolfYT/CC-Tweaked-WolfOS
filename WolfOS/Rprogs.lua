@@ -44,10 +44,10 @@ while true do
         shell.run("/WolfOS/Menu.lua")
       elseif has_value(numkeys, p, proglen) and not has_value(numkeys, (p - (9 - proglen)), proglen) then
         if term.isColor() then
-          shell.run("fg /WolfOS/Programs/" .. progs[p - keys.one - 1])
+          shell.run("fg /WolfOS/Programs/" .. progs[p - keys.zero])
         else
           term.clear()
-          shell.run("/WolfOS/Programs/" .. progs[p - keys.one - 1])
+          shell.run("/WolfOS/Programs/" .. progs[p - keys.zero])
         end
       end
    end

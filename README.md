@@ -4,7 +4,7 @@ A program that tries to emulate the feel of a modern operating system on compute
 ## Changelog (103):
 - Rolled back changes from v102
 
-## Upcoming (104):
+## Upcoming:
 - Better grayscale support, and touch support.
 
 ## Setup:

@@ -4,6 +4,9 @@ A program that tries to emulate the feel of a modern operating system on compute
 ## Changelog (103):
 - Rolled back changes from v102
 
+## Upcoming (104):
+- Better grayscale support, and touch support.
+
 ## Setup:
 ### Step 1: Installer
 Run this command: `wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/Install.lua` (you might need to add `./Install.lua` to the end on 1.12 and below)

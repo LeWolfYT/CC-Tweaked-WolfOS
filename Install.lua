@@ -1,6 +1,6 @@
 local w,h = term.getSize()
 term.setBackgroundColor(colors.green)
-local text = "WolfOS Installer"
+local text = "WolfOS Installer v1.2"
 local full = text..string.rep(" ",(w - #text))
 term.setCursorPos(1,1)
 term.blit(full,string.rep("f",#full),string.rep("5",#full))

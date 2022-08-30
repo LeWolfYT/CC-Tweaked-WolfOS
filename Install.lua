@@ -1,4 +1,10 @@
-print("Welcome to the WolfOS installer!")
+local w,h = term.getSize()
+term.setBackgroundColor(colors.green)
+local text = "WolfOS Installer"
+local full = text..string.rep(" ",(w - #text))
+term.setCursorPos(1,1)
+term.blit(full,string.rep("f",#full),string.rep("5",#full))
+term.setCursorPos(1,2)
 os.sleep(0.1)
 print("Installing...")
 os.sleep(1)

@@ -1,8 +1,8 @@
 local w,h = term.getSize()
-paintutils.drawFilledBox(0,0,w,h,colors.green)
 local text = "WolfOS Installer v1.3.2"
 local full = text..string.rep(" ",(w - #text))
 win = window.create(term.current(),1,2,w,(h-1))
+paintutils.drawFilledBox(0,0,w,h,colors.green)
 term.setCursorPos(1,1)
 term.blit(full,string.rep("f",#full),string.rep("5",#full))
 term.redirect(win)

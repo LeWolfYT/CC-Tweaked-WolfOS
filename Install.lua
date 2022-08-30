@@ -1,5 +1,5 @@
 local w,h = term.getSize()
-term.setBackgroundColor(colors.green)
+paintutils.drawFilledBox(0,0,w,h,colors.green)
 local text = "WolfOS Installer v1.2"
 local full = text..string.rep(" ",(w - #text))
 term.setCursorPos(1,1)

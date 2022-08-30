@@ -9,7 +9,7 @@ A program that tries to emulate the feel of a modern operating system on compute
 
 ## Setup:
 ### Step 1: Installer
-Run this command: `wget https://raw.githubusercontent.com/LeWolfYT/CC-Tweaked-WolfOS/main/Install.lua` (you might need to add `./Install.lua` to the end on 1.12 and below)
+Run this command: `wget https://raw.githubusercontent.com/LeWolfYT/CC-WolfOS/main/Install.lua` (you might need to add `./Install.lua` to the end on 1.12 and below)
 
 Then, start it by typing `Install`
 

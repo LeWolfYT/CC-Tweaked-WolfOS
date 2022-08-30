@@ -1,6 +1,6 @@
 local w,h = term.getSize()
 paintutils.drawFilledBox(0,0,w,h,colors.green)
-local text = "WolfOS Installer v1.2"
+local text = "WolfOS Installer v1.3"
 local full = text..string.rep(" ",(w - #text))
 term.setCursorPos(1,1)
 term.blit(full,string.rep("f",#full),string.rep("5",#full))

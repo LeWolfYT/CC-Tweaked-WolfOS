@@ -1,12 +1,12 @@
 term.clear()
-term.setCursorPos(8,2)
+term.setCursorPos(2,2)
 term.write("WolfOS Boot menu")
 
-term.setCursorPos(8,4)
+term.setCursorPos(2,4)
 term.write("[S]tart WolfOS")
-term.setCursorPos(8,6)
+term.setCursorPos(2,6)
 term.write("[E]xit to CraftOS")
-term.setCursorPos(8,8)
+term.setCursorPos(2,8)
 term.write("[U]ninstall WolfOS")
 
 while true do

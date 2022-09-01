@@ -15,7 +15,7 @@ term.setCursorPos(1,sizey)
 term.write("[M]enu")
 
 cver = tonumber(fs.open("/WolfOS/ver.txt", "r").readAll())
-lver = tonumber(http.get("https://github.com/LeWolfYT/CC-Tweaked-WolfOS/raw/main/WolfOS/ver.txt").readAll())
+lver = tonumber(http.get("https://github.com/LeWolfYT/CC-WolfOS/raw/main/WolfOS/ver.txt").readAll())
 
 term.setCursorPos(sizex - #("WolfOS v" .. cver),sizey)
 term.write("WolfOS v" .. cver)

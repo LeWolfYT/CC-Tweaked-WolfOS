@@ -1,8 +1,9 @@
 # WolfOS
 A program that tries to emulate the feel of a modern operating system on computercraft computers.
 
-## Changelog (106):
-- Updated boot menu. Installer is next!
+## Changelog (107):
+- Fixed reinstaller not installing the menu
+- Fixed desktop using old github URL
 
 ## Upcoming:
 - Better grayscale support, and touch support.

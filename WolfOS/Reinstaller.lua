@@ -14,5 +14,5 @@ shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-WolfOS/main/WolfOS
 shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-WolfOS/main/WolfOS/Exit.lua /WolfOS/Exit.lua")
 shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-WolfOS/main/WolfOS/ver.txt /WolfOS/ver.txt")
 shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-WolfOS/main/WolfOS/Update.lua /WolfOS/Update.lua")
-shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-WolfOS/main/WolfOS/BootMenu.lua /WolfOS/Menu.lua")
+shell.run("wget https://raw.githubusercontent.com/LeWolfYT/CC-WolfOS/main/WolfOS/Menu.lua /WolfOS/Menu.lua")
 shell.run("/WolfOS/Menu.lua")
